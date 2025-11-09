@@ -17,9 +17,10 @@ application {
 jar {
     manifest {
         attributes(
-            'Main-Class': 'App'
+            'Main-Class': 'backend.App'
         )
     }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     from {
         configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
     }
