@@ -17,7 +17,7 @@ application {
 jar {
     manifest {
         attributes(
-            'Main-Class': 'backend.App'
+            'Main-Class': 'App'
         )
     }
     from {
